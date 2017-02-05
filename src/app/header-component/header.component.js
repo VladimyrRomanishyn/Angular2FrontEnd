@@ -9,14 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var url = "header.component.html";
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent.prototype.search = function (data) {
+        console.log(data);
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'header-component',
-            templateUrl: 'header.component.html',
+            templateUrl: url,
+            //    templateUrl: "header.component.html",
             styleUrls: ['header.component.css']
         }), 
         __metadata('design:paramtypes', [])
